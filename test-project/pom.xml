@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.akquinet.jbosscc.maven</groupId>
+    <artifactId>test-project</artifactId>
+    <version>1.0.0</version>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>de.akquinet.jbosscc.maven</groupId>
+                <artifactId>maven-image-plugin</artifactId>
+                <version>1.0.0</version>
+                <configuration>
+                    <sourceImage>src/test/resources/afolder/tour_eiffel.jpg</sourceImage>
+                    <targetImage>target/afolder/tour_eiffel.jpg</targetImage>
+                    <defaults>
+                        <fontName>Courier</fontName>
+                        <fontStyle>1</fontStyle>
+                        <fontSize>24</fontSize>
+                        <fontColor>WHITE</fontColor>
+                    </defaults>
+                    <texts>
+                        <text>
+                            <text>Hello</text>
+                            <offsetX>50</offsetX>
+                            <offsetY>500</offsetY>
+                        </text>
+                        <text>
+                            <text>from</text>
+                            <fontStyle>0</fontStyle>
+                            <offsetX>200</offsetX>
+                            <offsetY>400</offsetY>
+                        </text>
+                        <text>
+                            <text>Paris</text>
+                            <fontName>Lucida Bright</fontName>
+                            <fontStyle>0</fontStyle>
+                            <fontSize>96</fontSize>
+                            <fontColor>MAGENTA</fontColor>
+                            <offsetX>70</offsetX>
+                            <offsetY>200</offsetY>
+                        </text>
+                    </texts>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
